@@ -27,7 +27,7 @@
       <source src="tacky.mp3"/>
       Your browser does not support the audio element.
     </audio>-->
-    <main>
+    <main onmouseover="changeMouse()" id="changeMouse">
       <nav>
         <div>
           <h1>
@@ -41,7 +41,7 @@
           </h1>
         </div>
       </nav>
-      <div id="holiday-message">
+      <marquee id="holiday-message">
         <p>
           Hope you have the happiest of holidays! I have enjoyed meeting
           everyone and becoming a part of the Maxx
@@ -52,15 +52,17 @@
           learn from everyone, and to have already come so far in such a short
           time.
         </p>
+      </marquee>
+      <div id="counter">
       </div>
-      <h2 style="margin-top: 25px;">Here is a gallery of my favorite Good Mythical Morning Christmas Videos!</h2>
+      <h2 style="margin-top: 25px auto;">In my free time I enjoy watching a lot of Youtube videos, and one of my favorite channels is called Good Mythical Morning. I have been watching the two main creators Rhett and Link for over 7 years. They have over 2,000 videos on their Good Mythical Morning channel alone. </br>  Here is a gallery of my favorite Good Mythical Morning Christmas Videos!</h2>
       <div id="video-gallery">
         <div id="row-one">
           <div id="video-one">
             <iframe
               width="420"
               height="315"
-              src="https://www.youtube.com/embed/51cPn3YHcDg"
+              src="https://www.youtube.com/embed/T448qKB3ucU"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -94,7 +96,7 @@
             <iframe
               width="420"
               height="315"
-              src="https://www.youtube.com/embed/T448qKB3ucU"
+              src="https://www.youtube.com/embed/51cPn3YHcDg"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -112,13 +114,18 @@
           </div>  
         </form>
       </div>
+      <div id="naughtynice">
+        <h2>Have you been good all year? Click the button</h2>
+        <button id="nnspinner">Click me</button>
+      </div>
       <footer>
-        <p>Only the finest, made by Jessica Wilson.</p> 
+        <p>Only the finest, made by Jessica Wilson. Still a work in progress.</p> 
         <iframe src="https://giphy.com/embed/l0MYw0DsFJc0kU0Jq" width="480" height="330" frameBorder="0" class="giphy-embed" allowFullScreen>
-        </iframe><p><a href="https://giphy.com/gifs/hulu-cbs-sabrina-the-teenage-witch-l0MYw0DsFJc0kU0Jq">via GIPHY</a></p>
+        </iframe><p><a href="https://giphy.com/gifs/hulu-cbs-sabrina-the-teenage-witch-l0MYw0DsFJc0kU0Jq"></a></p>
       </footer>
     </main>
     <script src="js/jquery-1.12.0.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script> 
+    <script src="js/Konami.js"></script> 
   </body>
 </html>

@@ -27,25 +27,46 @@ nav a {
 	color: white;
 }
 @keyframes bounce {
-	0%, 20%, 60%, 100% {
+	0%, 10%, 30%, 70%, 100% {
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
 
-	40% {
-		-webkit-transform: translateY(-20px);
-		transform: translateY(-20px);
+	10% {
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+
+	70% {
+		-webkit-transform: translateY(-80px);
+		transform: translateY(-80px);
 	}
 
 	80% {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
+		-webkit-transform: translateY(-100px);
+		transform: translateY(-100px);
 	}
 }
 
 nav h1:hover {
 	animation: bounce 2s;
 	text-decoration: underline;
+}
+#counter {
+	color: red;
+	background-color: darkgreen;
+	height: 75px;
+	margin-top: 10px;
+	font-size: 40px;
+	font-family: "Comic Sans MS";
+	padding-top: 30px;
+}
+#counter:hover {
+	height: 350px;
+	color: darkgreen;
+	background-color: red;
+	font-size: 80px;
+	padding-top: 50px;
 }
 #holiday-message {
 	margin-top: 20px;
@@ -58,12 +79,16 @@ nav h1:hover {
 #holiday-message img {
 	width: 20px;
 }
+h2 {
+	color: white;
+}
 #video-gallery {
 	height: 725px;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 450px, 450px;
 	grid-template-rows: 1fr 1fr;
 	grid-gap: 10px;
+	overflow: auto;
 }
 #wish-list {
 	height: 300px;
@@ -80,6 +105,12 @@ form {
 }
 #form-input {
 	margin-top: 15px;
+}
+form p {
+	color: cyan;
+}
+#wishlist:active {
+	width: 1px;
 }
 #submit:hover {
 	animation-name: spin;
@@ -101,6 +132,7 @@ form {
 footer {
 	color: beige;
 	font-size: 20px;
+	padding-bottom: 50px;
 }
 /* Responsive Styles */
 @media only screen and (max-width: 780px) {
