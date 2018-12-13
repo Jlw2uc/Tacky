@@ -88,8 +88,6 @@ h2 {
 	height: 725px;
 	display: grid;
 	grid-template-columns: 450px, 450px;
-	grid-template-rows: 1fr 1fr;
-	grid-gap: 10px;
 	overflow: auto;
 }
 #wish-list {
