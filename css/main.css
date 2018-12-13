@@ -4,6 +4,7 @@ Base styles:
 ----------------------------------------------------------------------------- */
 body {
 	background-image: url("../img/backgrounde.jpg");
+	cursor: wait;
 }
 main {
 	margin-left: 200px;
@@ -17,7 +18,8 @@ nav {
 	font-family: "Comic Sans MS";
 	text-align: center;
 	position: sticky;
-    top: 0;
+	top: 0;
+	z-index: 2;
 }
 nav h1 {
 	display: inline-block;
@@ -62,7 +64,7 @@ nav h1:hover {
 	padding-top: 30px;
 }
 #counter:hover {
-	height: 350px;
+	height: 310px;
 	color: darkgreen;
 	background-color: red;
 	font-size: 80px;
@@ -97,6 +99,9 @@ h2 {
 	padding-top: 5px;
 	padding-bottom: 10px;
 }
+#wish-list:hover {
+	background-color: lime;
+}
 form {
 	font-family: "Comic Sans MS";
 	color: green;
@@ -108,6 +113,9 @@ form {
 }
 form p {
 	color: cyan;
+}
+form p:hover {
+	color: red;
 }
 #wishlist:active {
 	width: 1px;
@@ -128,6 +136,15 @@ form p {
 }
 #wishlist {
 	height: 150px;
+}
+#naughtynice {
+	height: 175px;
+	background-image: url("../img/candycane.jpg");
+	padding-top: 50px;
+}
+#naughtynice h2 {
+	color: crimson;
+	font-family: "Comic Sans MS";
 }
 footer {
 	color: beige;

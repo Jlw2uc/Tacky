@@ -14,8 +14,7 @@ var countDownDate = new Date("Dec 25, 2018 00:00:00").getTime();
             document.getElementById("demo").innerHTML = "It's Christmas Day!!";
           }
         }, 1000);
-
-//Mouse Pointer!
-function changeMouse() {
-    document.getElementById("changeMouse").style.cursor = "wait";
+//Naughty or Nice spinner        
+function naughtyOrNice() {
+    alert("You know you were naughty!");
 }
