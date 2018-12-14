@@ -10,6 +10,6 @@ $(document).keydown(function(e) {
 
     $('body').css('background-color', 'red');
     $('main').css('display', 'none');
-    alert("You're street fighter ready!");
+    alert("You're Christmas ready!");
   }
 });
