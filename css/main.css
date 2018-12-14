@@ -119,8 +119,8 @@ form marquee {
 form marquee:hover {
 	color: red;
 }
-#wishlist:active {
-	width: 1px;
+#wishlist:hover {
+	width: 50px;
 }
 #submit:hover {
 	animation-name: spin;
