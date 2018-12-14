@@ -4,7 +4,7 @@ Base styles:
 ----------------------------------------------------------------------------- */
 body {
 	background-image: url("../img/backgrounde.jpg");
-	cursor: wait;
+	cursor: url("../wreath.png"), pointer;
 }
 main {
 	margin-left: 200px;
@@ -12,7 +12,6 @@ main {
 	background-image: url("../img/christmas-tree.jpg");
 	text-align: center;
 }
-
 nav {
 	background-image: url("../img/glitter-backgrounde.jpg");
 	font-family: "Comic Sans MS";
@@ -60,7 +59,7 @@ nav h1:hover {
 	height: 75px;
 	margin-top: 10px;
 	font-size: 40px;
-	font-family: "Comic Sans MS";
+	font-family: 'Berkshire Swash', cursive;
 	padding-top: 30px;
 }
 #counter:hover {
@@ -75,7 +74,7 @@ nav h1:hover {
 	padding: 5px 15px 8px 15px;
 	background:red;
 	color: white;
-	font-family: 'Unlock', cursive;
+	font-family: 'Berkshire Swash', cursive;
 	font-size: 24px;
 }
 #holiday-message img {
@@ -83,6 +82,10 @@ nav h1:hover {
 }
 h2 {
 	color: white;
+	background-color: rgba(255, 255, 255, 0.233);
+	font-family: "Comic Sans MS";
+	padding-left: 20px;
+	padding-right: 20px;
 }
 #video-gallery {
 	height: 725px;
@@ -109,10 +112,11 @@ form {
 #form-input {
 	margin-top: 15px;
 }
-form p {
+form marquee {
 	color: cyan;
+	margin-top: 15px;
 }
-form p:hover {
+form marquee:hover {
 	color: red;
 }
 #wishlist:active {
@@ -134,20 +138,57 @@ form p:hover {
 }
 #wishlist {
 	height: 150px;
+	border-radius: 5px;
 }
 #naughtynice {
-	height: 175px;
+	height: 150px;
 	background-image: url("../img/candycane.jpg");
-	padding-top: 50px;
+	margin-top: 50px;
+	padding-top: 75px;
 }
 #naughtynice h2 {
 	color: crimson;
-	font-family: "Comic Sans MS";
+	background-color: rgba(255, 255, 255, 0.616);
+}
+#naughtynice button {
+	font-family: 'Berkshire Swash', cursive;
+	border-radius: 5px;
+}
+section {
+	background: linear-gradient(#e66465, #9198e5);
+	color: #e66430;
+	font-family: 'Berkshire Swash', cursive;
+	opacity: 0.5;
 }
 footer {
 	color: beige;
 	font-size: 20px;
 	padding-bottom: 50px;
+	font-family: "Comic Sans MS";
+}
+footer div {
+	width: 400px;
+	margin: 0 auto;
+}
+.modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	background-color: rgba(0, 0, 0, .75);
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.modal div {
+	display: flex;
+	flex-direction: column;
+}
+.modal h2 {
+	background-color: none;
+	color: red;
 }
 /* Responsive Styles */
 @media only screen and (max-width: 780px) {

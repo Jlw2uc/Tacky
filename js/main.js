@@ -18,3 +18,11 @@ var countDownDate = new Date("Dec 25, 2018 00:00:00").getTime();
 function naughtyOrNice() {
     alert("You know you were naughty!");
 }
+//Modal Pop Up
+$('section').on('click', function () {
+  $('.modal').css("display", "flex").hide().fadeIn();
+});
+
+$('.modal').on('click', function () {
+  $(this).fadeOut();
+});

@@ -13,10 +13,8 @@
     <title>The Very Tackiest</title>
     <link rel="christmas tree" href="tree.png" />
     <link rel="shortcut icon" href="tree.png" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Unlock"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -108,10 +106,13 @@
           <div id="video-seven">
               <iframe width="500" height="315" src="https://www.youtube.com/embed/M52kaMpkDhU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
+          <div id="video-eight">
+              <iframe width="500" height="315" src="https://www.youtube.com/embed/-C5q3oir8gA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
       </div>
       <div id="wish-list">
         <form>
-          <p>Tell Santa What You Want!</p>
+          <marquee>Tell Santa What You Want! Tell Santa What You Want! Tell Santa What You Want! Tell Santa What You Want!</marquee>
           <div id="form-input">
             <input type="text" id="wishlist" name="wishlist" placeholder=";)" /> 
             <input type="submit" id="submit" />
@@ -119,18 +120,29 @@
         </form>
       </div>
       <div id="naughtynice">
-        <h2>Have you been good all year? </br>
-          Click the button to find out if you're naughty or nice!</h2>
-        <button onclick="naughtyOrNice()">Click me</button>
+        <h2>We all know Santa checks his list twice, so it's time to find out,</h2>
+        <button onclick="naughtyOrNice()">Are you naughty or nice?</button>
       </div>
+      <section>
+        <p>There might be something hidden in here.</p>
+      </section>
       <footer>
-        <p>Only the finest, made by Jessica Wilson. Still a work in progress. </br>  
-          I plan to make the Naughty or Nice button into a spinning animation that randomly assigns naughty or nice.</br>
+        <div>
+          <p>Only the finest, made by Jessica Wilson. Still a work in progress. 
+          I plan to make the Naughty or Nice button into a spinning animation that randomly assigns naughty or nice.
           I also want to host this site live on my own AWS server in the future!
-        </p> 
+          </p> 
+        </div>
         <iframe src="https://giphy.com/embed/l0MYw0DsFJc0kU0Jq" width="480" height="330" frameBorder="0" class="giphy-embed" allowFullScreen>
         </iframe><p><a href="https://giphy.com/gifs/hulu-cbs-sabrina-the-teenage-witch-l0MYw0DsFJc0kU0Jq"></a></p>
       </footer>
+      <div class="modal">
+        <div>
+          <h2>You found me!</h2>
+          <iframe src="https://giphy.com/embed/yA7YOjMeqqhd6" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/santa-yA7YOjMeqqhd6">/a></p>
+        </div>
+      </div>
+
     </main>
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/main.js"></script> 
