@@ -8,8 +8,8 @@ $(document).keydown(function(e) {
   if ( kkeys.toString().indexOf( konami ) >= 0 ){
     $(document).unbind('keydown',arguments.callee);
 
-    $('body').css('background-color', 'red');
-    $('main').css('display', 'none');
-    alert("You're Christmas ready!");
+    $('main').css('background-color', 'red');
+    $('#snowflake').css('display', 'block');
+    alert("Let it snow!!");
   }
 });
