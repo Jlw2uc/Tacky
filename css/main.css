@@ -156,8 +156,8 @@ form marquee:hover {
 	border-radius: 5px;
 }
 section {
-	background: linear-gradient(#e66465, #9198e5);
-	color: #e66430;
+	background: linear-gradient(#e66465, #090c33);
+	color: white;
 	font-family: 'Berkshire Swash', cursive;
 	opacity: 0.5;
 }
